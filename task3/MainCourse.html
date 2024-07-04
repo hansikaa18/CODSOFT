@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="MainPage_styles.css" />
+    <title>Main Course</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="user-nav">
+          <h1 class="menu-head">MENU</h1>
+          <div class="user-nav__icon-box">
+            <div class="filter-container">
+                <button class="filter">Filter</button>
+                <div class="sub-menu">
+                    <a href="#" class="sub-item" filter-type="veg">Veg</a>
+                    <a href="#" class="sub-item" filter-type="non-veg">Non-Veg</a>
+                </div>
+            </div>
+            <a href="Cart.html" class="user-nav__link">
+              <img src="images/cart.png" alt="cart" class="cart_icon">
+              <span id="item-count">0</span>
+            </a>
+          </div>
+        </nav>
+      </header>
+    
+      <div class="content">
+        <nav class="sidebar">
+          <div class="side-nav">
+            <div class="side-nav__item">
+              <a href="MainPage.html" class="side-nav__link">All</a>
+            </div>
+            <div class="side-nav__item">
+              <a href="Starter.html" class="side-nav__link">Starter</a>
+            </div>
+            <div class="side-nav__item">
+              <a href="MainCourse.html" class="side-nav__link">Main Course</a>
+            </div>
+            <div class="side-nav__item">
+              <a href="Dessert.html" class="side-nav__link">Dessert</a>
+            </div>
+            <div class="side-nav__item">
+              <a href="Drinks.html" class="side-nav__link">Drinks</a>
+            </div>
+          </div>
+        </nav>
+        <main class="items">
+            <h2 class="coursetype">Main Course</h2>
+          <div class="MainCourse">
+            <div class="foodcard_item" filter-type="veg">
+              <img src="images/vegpizza.jpg" alt="Veg Pizza">
+              <h5 class="foodname">Veg Pizza</h5>
+              <p class="fooddesc">Its fresh and full of flavor, featuring cherry tomatoes, artichoke, bell pepper, olives, 
+                red onion and some hidden baby spinach. You will find a base of rich tomato sauce and golden, bubbling mozzarella </p>
+              <button class="price">Add 10.00$</button>
+            </div>
+            <div class="foodcard_item" filter-type="non-veg">
+              <img src="images/hawaiianpizza.jpg" alt="Hawaiian Pizza">
+              <h5 class="foodname">Hawaiian Pizza</h5>
+              <p class="fooddesc">Classic Hawaiian Pizza combines pizza sauce, cheese, cooked ham, and pineapple. 
+                This crowd-pleasing pizza recipe starts with\pizza crust and is finished with a sprinkle of crispy bacon.
+                 Its salty, sweet, cheesy, and undeniably delicious!</p>
+              <button class="price">Add 10.00$</button>
+            </div>
+            <div class="foodcard_item" filter-type="non-veg">
+              <img src="images/pepperonipizza.jpg" alt="Pepperoni Pizza">
+              <h5 class="foodname">Pepperoni Pizza</h5>
+              <p class="fooddesc">Our tomato based pizza topped with beef pepperoni, and cheesy mozzarella on our 
+                Italian rich tasty dough. A delicious classic.</p>
+              <button class="price">Add 10.00$</button>
+            </div>
+            <div class="foodcard_item" filter-type="veg">
+              <img src="images/cheesedeluxepizza.jpg" alt="Cheese Deluxe Pizza">
+              <h5 class="foodname">Cheese Deluxe Pizza</h5>
+              <p class="fooddesc">Cheese Pizza is made with pizza dough then topped with two different types of cheeses,
+                mozarella and parmesaan cheese.</p>
+              <button class="price">Add 10.00$</button>
+            </div>
+            <div class="foodcard_item" filter-type="non-veg">
+              <img src="images/chickenislandpizza.jpg" alt="Chicken Island Pizza">
+              <h5 class="foodname">Chicken Island Pizza</h5>
+              <p class="fooddesc">This chicken island pizza has spicy barbecue sauce, diced chicken, peppers, onion, 
+                and cilantro, all covered with cheese and baked to bubbly goodness! </p>
+              <button class="price">Add 10.00$</button>
+            </div>
+            <div class="foodcard_item" filter-type="non-veg">
+              <img src="images/tunapizza.jpg" alt="Tuna Pizza">
+              <h5 class="foodname">Tuna Pizza</h5>
+              <p class="fooddesc">A pre-baked pizza crust is topped with cream cheese, canned tuna, 
+                red onion, and mozzarella cheese, then baked until bubbly and golden brown.</p>
+              <button class="price">Add 10.00$</button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <div id="notification"></div>
+    <script src="main.js"></script>
+  </body>
+  </html>

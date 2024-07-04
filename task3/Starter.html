@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="MainPage_styles.css" />
+    <title>Starter</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="user-nav">
+          <h1 class="menu-head">MENU</h1>
+          <div class="user-nav__icon-box">
+            <div class="filter-container">
+                <button class="filter">Filter</button>
+                <div class="sub-menu">
+                    <a href="#" class="sub-item" filter-type="veg">Veg</a>
+                    <a href="#" class="sub-item" filter-type="non-veg">Non-Veg</a>
+                </div>
+            </div>
+            <a href="Cart.html" class="user-nav__link">
+              <img src="images/cart.png" alt="cart" class="cart_icon">
+              <span id="item-count">0</span>
+            </a>
+          </div>
+        </nav>
+      </header>
+    
+      <div class="content">
+        <nav class="sidebar">
+          <div class="side-nav">
+            <div class="side-nav__item">
+              <a href="MainPage.html" class="side-nav__link">All</a>
+            </div>
+            <div class="side-nav__item">
+              <a href="Starter.html" class="side-nav__link">Starter</a>
+            </div>
+            <div class="side-nav__item">
+              <a href="MainCourse.html" class="side-nav__link">Main Course</a>
+            </div>
+            <div class="side-nav__item">
+              <a href="Dessert.html" class="side-nav__link">Dessert</a>
+            </div>
+            <div class="side-nav__item">
+              <a href="Drinks.html" class="side-nav__link">Drinks</a>
+            </div>
+          </div>
+        </nav>
+        <main class="items">
+            <main class="items">
+                <h2 class="coursetype">Starter</h2>
+                <div class="starter">
+                  <div class="foodcard_item" filter-type="veg">
+                    <img src="images/cheeseball.jpg" alt="Cheese Ball">
+                    <h5 class="foodname">Cheese Ball</h5>
+                    <p class="fooddesc">Crispy and golden on the outside, soft and creamy on the inside,
+                      these delectable deep-fried Potato and Cheese Balls are the stuff of dreams.</p>
+                    <button class="price">Add 5.00$</button>
+                  </div>
+                  <div class="foodcard_item" filter-type="veg">
+                    <img src="images/garlicbread.jpg" alt="Garlic Bread">
+                    <h5 class="foodname">Garlic Bread</h5>
+                    <p class="fooddesc">Garlic bread is delicious and appetizing to eyes. The crispy, 
+                      buttery slices are topped with flavorful garlic and fresh herbs.</p>
+                    <button class="price">Add 7.00$</button>
+                  </div>
+                  <div class="foodcard_item" filter-type="veg">
+                    <img src="images/mozarellastick.jpg" alt="Mozzarella Stick">
+                    <h5 class="foodname">Mozzarella Stick</h5>
+                    <p class="fooddesc">mozzarella sticks is cheese coated in seasoned breadcrumbs, 
+                      then deep fried until golden brown and crispy.</p>
+                    <button class="price">Add 7.00$</button>
+                  </div>
+                  <div class="foodcard_item" filter-type="veg">
+                    <img src="images/mushroomsoup.jpg" alt="Mushroom Soup">
+                    <h5 class="foodname">Mushroom Soup</h5>
+                    <p class="fooddesc">Mushroom Soup is a rich, creamy soup . Cream of Mushroom Soup
+                      is healthy, nourishing and relished wholesome or as a starter</p>
+                    <button class="price">Add 7.00$</button>
+                  </div>
+                  <div class="foodcard_item" filter-type="non-veg">
+                    <img src="images/poppers.jpg" alt="Poppers">
+                    <h5 class="foodname">Poppers</h5>
+                    <p class="fooddesc">Lightly breaded in a sweet and savory flour mixture and then air 
+                      fried until crisp golden brown, they are served with a creamy mayo honey mustard sauce.</p>
+                    <button class="price">Add 5.00$</button>
+                  </div>
+                  <div class="foodcard_item" filter-type="veg">
+                    <img src="images/fries.jpg" alt="Fries">
+                    <h5 class="foodname">Fries</h5>
+                    <p class="fooddesc">Fries, made from deep-fried potatoes that have been cut into various shapes, especially thin strips.</p>
+                    <button class="price">Add 5.00$</button>
+                  </div>
+                </div>
+        </main>
+      </div>
+    </div>
+    <div id="notification"></div>
+    <script src="main.js"></script>
+  </body>
+  </html>

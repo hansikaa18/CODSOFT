@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="MainPage_styles.css" />
+    <title>Desserts</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="user-nav">
+          <h1 class="menu-head">MENU</h1>
+          <div class="user-nav__icon-box">
+            <div class="filter-container">
+                <button class="filter">Filter</button>
+                <div class="sub-menu">
+                    <a href="#" class="sub-item" filter-type="veg">Veg</a>
+                    <a href="#" class="sub-item" filter-type="non-veg">Non-Veg</a>
+                </div>
+            </div>
+            <a href="Cart.html" class="user-nav__link">
+              <img src="images/cart.png" alt="cart" class="cart_icon">
+              <span id="item-count">0</span>
+            </a>
+          </div>
+        </nav>
+      </header>
+    
+      <div class="content">
+        <nav class="sidebar">
+          <div class="side-nav">
+            <div class="side-nav__item">
+              <a href="MainPage.html" class="side-nav__link">All</a>
+            </div>
+            <div class="side-nav__item">
+              <a href="Starter.html" class="side-nav__link">Starter</a>
+            </div>
+            <div class="side-nav__item">
+              <a href="MainCourse.html" class="side-nav__link">Main Course</a>
+            </div>
+            <div class="side-nav__item">
+              <a href="Dessert.html" class="side-nav__link">Dessert</a>
+            </div>
+            <div class="side-nav__item">
+              <a href="Drinks.html" class="side-nav__link">Drinks</a>
+            </div>
+          </div>
+        </nav>
+        <main class="items">
+            <h2 class="coursetype">Desserts</h2>
+          <div class="Dessert">
+            <div class="foodcard_item" filter-type="veg">
+              <img src="images/chocomuffin.jpg" alt="Chocolate Muffin">
+              <h5 class="foodname">Chocolate Muffin</h5>
+              <p class="fooddesc"> The muffins are incredibly rich, mega chocolate-y, and loaded with chocolate chips in every single bite.
+                 Sour cream helps guarantee a soft and moist muffin that has a denser texture than chocolate cupcakes</p>
+              <button class="price">Add 5.00$</button>
+            </div>
+            <div class="foodcard_item" filter-type="veg">
+              <img src="images/chocopastry.jpg" alt="Chocolate Muffin">
+              <h5 class="foodname">Chocolate Pastry</h5>
+              <p class="fooddesc">Chocolate Pastry a simple moist chocolate cake with whipped ganache.</p>
+              <button class="price">Add 7.00$</button>
+            </div>
+            <div class="foodcard_item" filter-type="veg">
+              <img src="images/oatsmuffin.jpg" alt="Oats Muffin">
+              <h5 class="foodname">Oats Muffin</h5>
+              <p class="fooddesc">A rich, crumble-topped oatmeal muffin recipe made with an oatmeal and yogurt base.
+                 Golden-topped, wholesome, and a fantastic pocket treat.</p>
+              <button class="price">Add 5.00$</button>
+            </div>
+            <div class="foodcard_item" filter-type="veg">
+              <img src="images/applepie.jpg" alt="Apple Pie">
+              <h5 class="foodname">Apple Pie</h5>
+              <p class="fooddesc">With a mountain of gooey cinnamon apples nestled under a perfectly buttery and flaky pie crust,
+                 and then top with vanilla ice cream for the ultimate dessert.</p>
+              <button class="price">Add 7.00$</button>
+            </div>
+            <div class="foodcard_item" filter-type="non-veg">
+              <img src="images/redvelvet.jpg" alt="Red Velvet Cake">
+              <h5 class="foodname">Red Velvet Cake</h5>
+              <p class="fooddesc">This red velvet cake is so incredibly soft, full of flavor and is topped with the most delicious cream cheese buttercream.
+                 It has a super velvety texture and slightly tart, yet sweet and creamy frosting.</p>
+              <button class="price">Add 7.00$</button>
+            </div>
+            <div class="foodcard_item" filter-type="non-veg">
+              <img src="images/cheesecake.jpg" alt="Cheesecake">
+              <h5 class="foodname">Cheesecake</h5>
+              <p class="fooddesc">Cheesecake, a dessert consisting of a thick, creamy filling of cheese, eggs,
+                 and sugar over a thinner crust and topped with sweet</p>
+              <button class="price">Add 7.00$</button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <div id="notification"></div>
+    <script src="main.js"></script>
+  </body>
+  </html>
