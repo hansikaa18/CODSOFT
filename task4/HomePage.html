@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="HomePage_styles.css" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <div class="header">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="logo" class="welcome">
+        </div>
+      <a href = "ShoppingBag.html">
+        <img src="images/shoppingbag.jpg" alt="shoppingbag" class="shopping_bag">
+        <span id="item-count">0</span>
+      </a>
+      <div class="clothing_type">
+        <a href="Women.html" class="cloth_type_link">Women</a>
+        <a href="Men.html" class="cloth_type_link">Men</a>
+        <a href="Kids.html" class="cloth_type_link">Kids</a>
+      </div>
+      <input type="text" id="search-box" placeholder="Search">
+    </div>
+    <div class="content">
+        <div class="image-container">
+            <img src="images/clothes_bg.jpg" class="clothes_bg">
+            <div class="headertext">à la mode</div>
+            <div class="text">Where Fashion Meets Passion</div>
+        </div>
+        <h2>NEW ARRIVAL</h2>
+        <div class="new_arrival">
+            <h3>Women New Collection</h3>
+            <div class="women_new">
+                <div class="clothCard">
+                    <img src="images/women_dress1.jpg" alt="women_dress1">
+                    <button class="open-modal" data-price="30">Yellow linen dress</button>
+                </div>
+                <div class="clothCard">
+                    <img src="images/women_dress2.jpg" alt="women_dress2">
+                    <button class="open-modal" data-price="30">Blue sea breeze dress</button>
+                </div>
+                <div class="clothCard">
+                    <img src="images/women_top1.jpg" alt="women_top1">
+                    <button class="open-modal" data-price="10">Blue denim crop top</button>
+                </div>
+                <div class="clothCard">
+                    <img src="images/women_top2.jpg" alt="women_top2">
+                    <button class="open-modal" data-price="15">Black corset top</button>
+                </div>
+                <div class="clothCard">
+                    <img src="images/women_longskirt1.jpg" alt="women_skirt1">
+                    <button class="open-modal" data-price="25">Long stripped skirt</button>
+                </div>
+                <div class="clothCard">
+                    <img src="images/women_skirt2.jpeg" alt="women_skirt2">
+                    <button class="open-modal" data-price="20">Colorful short skirt</button>
+                </div>
+                <div class="clothCard">
+                    <img src="images/women_jeans1.jpg" alt="women_jeans1">
+                    <button class="open-modal" data-price="40">Blue denim baggy jeans</button>
+                </div>
+                <div class="clothCard">
+                    <img src="images/women_jeans2.jpg" alt="women_jeans2">
+                    <button class="open-modal" data-price="40">Blue denim flared jeans</button>
+                </div>
+            </div>
+            <h3>Men New Collection</h3>
+            <div class="men_new">
+                <div class="clothCard">
+                    <img src="images/men_shirt1.jpg" alt="men_shirt1">
+                    <button class="open-modal" data-price="30">Men printed Shirt</button>
+                </div>
+                <div class="clothCard">
+                    <img src="images/men_shirt2.jpg" alt="men_shirt2">
+                    <button class="open-modal" data-price="25">Men white shirt</button>
+                </div>
+                <div class="clothCard">
+                    <img src="images/men_tshirt1.jpg" alt="men_tshirt1">
+                    <button class="open-modal" data-price="20">Men beige tshirt</button>
+                </div>
+                <div class="clothCard">
+                    <img src="images/men_tshirt2.jpg" alt="men_tshirt2">
+                    <button class="open-modal" data-price="20">Men tommy tshirt</button>
+
+                </div>
+                <div class="clothCard">
+                    <img src="images/men_shorts1.jpg" alt="men_shorts1">
+                    <button class="open-modal" data-price="15">Men yellow shorts</button>
+                </div>
+                <div class="clothCard">
+                    <img src="images/men_shorts2.jpg" alt="men_shorts2">
+                    <button class="open-modal" data-price="20">Men denim shorts</button>
+                </div>
+                <div class="clothCard">
+                    <img src="images/men_pants1.jpg" alt="men_pants1">
+                    <button class="open-modal" data-price="30">Men formal black pants</button>
+                </div>
+                <div class="clothCard">
+                    <img src="images/men_pants2.jpg" alt="men_pants2">
+                    <button class="open-modal" data-price="30"> Men cargo pants</button>
+                </div>
+            </div>
+            <h3>Kids New Collection</h3>
+            <div class="kids_new">
+                <div class="clothCard">
+                    <img src="images/kids_dress1.jpg" alt="kids_dress1">
+                    <button class="open-modal" data-price="20"> Girls cotton flower dress</button>
+                </div>
+                <div class="clothCard">
+                    <img src="images/kids_jeans1.jpg" alt="kids_jeans1">
+                    <button class="open-modal" data-price="20"> Kids Blue denim jeans</button>
+                </div>
+                <div class="clothCard">
+                    <img src="images/kids_jeans2.jpg" alt="kids_jeans2">
+                    <button class="open-modal" data-price="20"> Kids comfy jeans</button>
+                </div>
+                <div class="clothCard">
+                    <img src="images/kids_shorts1.jpg" alt="kids_shorts1">
+                    <button class="open-modal" data-price="10"> Kids White denim shorts</button>
+                </div>
+                <div class="clothCard">
+                    <img src="images/kids_top1.jpg" alt="kids_top1">
+                    <button class="open-modal" data-price="10"> Kids white printed tshirt</button>
+                </div>
+                <div class="clothCard">
+                    <img src="images/kids_top2.png" alt="kids_top1">
+                    <button class="open-modal" data-price="15"> Kids sporty tshirts</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modal-img" src="" alt="modal image">
+            <h2 id="modal-title"></h2>
+            <select class="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+            <input type="number" id="quantity-input" placeholder="quantity">
+            <button class="price">Add $</button>
+        </div>
+    </div>
+    <div id="notification"></div>
+    <script src="main.js"></script>
+  </body>
+</html>

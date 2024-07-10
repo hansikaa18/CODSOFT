@@ -1,0 +1,337 @@
+:root {
+  --color-grey-light-1: #f4f2f2;
+  --color-grey-light-2: #f0eeee;
+
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+
+  --line: 1px solid var(--color-grey-light-1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-grey-dark-1);
+  background-size: cover;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.back_icon {
+    width: 30px; 
+    height: 30px; 
+    transition: filter 0.1s ease; 
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .back_icon:hover{
+    filter: brightness(1.5);
+  }
+
+.header {
+    font-size: 1.4rem;
+    background-color: #fff;
+    border-bottom: 1px solid var(--color-grey-light-1);
+    padding: 1rem 2rem;
+  }
+
+  #search-box{
+    border: #ccc;
+    border-bottom-color: #1d2721;
+    border-bottom-style:groove;
+  }
+  
+  #search-box:focus{
+    border: #ccc;
+    border-bottom-color: #1d2721;
+    border-bottom-style:groove;
+    outline: none;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome {
+    height: 100px;
+    width: 200px;
+}
+
+  .clothing_type {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .shopping_bag {
+    width: 70px; 
+    height: 70px; 
+    filter: brightness(1.2); 
+    transition: filter 0.1s ease; 
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .header:hover .shopping_bag {
+    filter: brightness(1.8); 
+    border-radius: 10%;
+  }
+
+  #item-count{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding:0px  7px;
+    position: absolute;
+    top:55px;
+    right:20px;
+    background-color: #292953;
+    color:#fff;
+  }
+
+  .cloth_type_link {
+    text-decoration: none;
+    color: var(--color-grey-dark-1);
+    font-size: 1.6rem;
+     
+  }
+  
+  .cloth_type_link:hover {
+    color: var(--color-grey-dark-2);
+  }
+
+  .sidebar {
+    width: 200px; 
+    background-color: var(--color-grey-light-1);
+    padding: 10px; 
+    margin-right: 20px; 
+    margin-top: 10px;
+    position: fixed;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5); 
+}
+
+.filter_type {
+    display: flex;
+    flex-direction: column; 
+}
+
+.sub-item {
+    text-decoration: none; 
+    font-size: 15px;
+    color: #333; 
+    padding: 10px; 
+    margin: 5px 0; 
+    background-color: #fff; 
+    border-radius: 5px;
+}
+
+.all{
+    text-decoration: none; 
+    font-size: 15px;
+    color: #333; 
+    padding: 10px; 
+    margin: 5px 0; 
+    background-color: #fff; 
+    border-radius: 5px;
+}
+
+
+.sub-item:hover {
+    background-color: #ddd; 
+    color: #000; 
+}
+
+.all:hover{
+    background-color: #ddd; 
+    color: #000; 
+}
+
+.image-container {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    left:250px;
+}
+
+.clothes_bg {
+    height: 500px;
+    width: 1000px;
+    filter: brightness(50%) saturate(50%);
+    display: block;
+}
+
+.headertext {
+    position: absolute;
+    bottom: 200px;
+    left:350px; 
+    color: white;
+    padding: 5px;
+    font-size: 5rem;
+}
+
+  .content {
+    padding: 2rem;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+    background-color: var(--color-grey-light-2);
+    display: grid;
+    grid-template-columns: repeat(4, 0.1fr);
+    gap: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .clothCard {
+    width: 250px;
+    height: 400px;
+    margin: 5px;
+    background-color: #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+}
+
+.clothCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.clothCard button {
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    width: 200px; 
+    text-align: center; 
+}
+
+.clothCard button:hover {
+    cursor: pointer;
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    width: 200px;
+    text-align: center; 
+  }
+  
+  .modal {
+    display: none; 
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5); 
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid var(--color-grey-dark-2);
+    width: 80%; 
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .close-button {
+    color: var(--color-grey-dark-2);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-button:hover {
+    color: black;
+    cursor: pointer;
+  }
+  
+  .modal img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  #modal-title{
+    font-size: 30px;
+  }
+
+  .price{
+    background-color: #3fbd78; 
+    color: #fff; 
+    padding: 5px 10px;
+    border: 1px solid #077a3b;
+    cursor: pointer;
+    font-size: 17px;
+  }
+
+  .price:hover{
+    box-shadow:  0 4px 8px var(--color-grey-dark-1);
+  }
+  .size{
+    border: #ccc;
+    border-bottom-color: #1d2721;
+    border-bottom-style:groove;
+    outline: none;
+    width:50px;
+    height: 30px;
+    margin: 10px;
+    font-size: 17px;
+  }
+
+  #notification {
+    display: none; 
+    position: fixed;
+    top: 5px;
+    right:40px;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: var(--shadow-dark);
+    font-size: 1.3rem;
+  }
+
+  #quantity-input{
+    border: #ccc;
+    border-bottom-color: #1d2721;
+    border-bottom-style:groove;
+    outline: none;
+    width:50px;
+    height: 30px;
+    margin: 10px;
+    font-size: 17px;
+  }
