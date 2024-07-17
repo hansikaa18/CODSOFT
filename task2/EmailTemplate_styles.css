@@ -1,0 +1,98 @@
+:root {
+  --color-grey-light-1: #f4f2f2;
+  --color-grey-light-2: #f0eeee;
+
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+
+  --line: 1px solid var(--color-grey-light-1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-grey-dark-1);
+  background-size: cover;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.topic{
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+}
+
+.edit{
+    background-color: #ef5b44; 
+  color: #fff;
+  padding: 10px 10px; 
+  border: none; 
+  cursor: pointer; 
+  border-radius: 5px; 
+  font-size: 17px;
+  position: absolute; 
+  top: 10px; 
+  left: 10px; 
+}
+.save{
+    background-color: #3fbd78; 
+  color: #fff;
+  padding: 10px 10px; 
+  border: none; 
+  cursor: pointer; 
+  border-radius: 5px; 
+  font-size: 17px;
+  position: absolute; 
+  top: 10px; 
+  right: 10px;
+}
+
+.template{
+    display: none;
+    white-space: pre-wrap;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 20px;
+    font-size: 15px;
+}
+
+input[type="text"] {
+    border: #ccc;
+    border-bottom-color: #1d2721;
+    border-bottom-style:groove;
+}
+
+input[type="text"]:focus{
+    border: #ccc;
+    border-bottom-color: #1d2721;
+    border-bottom-style:groove;
+    outline: none;
+  }
+
+  .back_icon {
+    width: 30px; 
+    height: 30px; 
+    transition: filter 0.1s ease; 
+    cursor: pointer;
+    position: absolute;
+    bottom: 500px;
+    left: 10px;
+  }
+  
+  .back_icon:hover{
+    filter: brightness(1.5);
+  }
